@@ -8,7 +8,7 @@
 
 ## 📂 Contenido del Repositorio
 En esta sección listo los archivos principales que vas a encontrar:
-* `Guia.Recursividad.py`: Ejercicios prácticos sobre funciones recursivas, logaritmos y potencias.
-
+* Guia Recursividad: Ejercicios prácticos.
+* Guia Pila: Ejercicios prácticos.
 ---
 *Este repositorio está en constante actualización.*
