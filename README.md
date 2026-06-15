@@ -10,5 +10,6 @@
 En esta sección listo los archivos principales que vas a encontrar:
 * Guia Recursividad: Ejercicios prácticos.
 * Guia Pila: Ejercicios prácticos.
+* Guia Cola: Ejercicios prácticos.
 ---
 *Este repositorio está en constante actualización.*
