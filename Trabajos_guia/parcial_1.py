@@ -97,7 +97,6 @@ for nombre in ["Electro", "Baron Zemo"]:
     for p in lista:
         if p['name'] == nombre:
             print(f"Eliminando a: {p['name']}")
-            # Aquí imprimimos toda la información del personaje antes de borrarlo
             print(f"Información: {p}") 
             lista.remove(p)
             break
