@@ -4,7 +4,7 @@ from super_heroes_data import superheroes
 def buscar_capitan(lista):
     if len(lista) == 0:
         return False
-    if lista[0]['name'] == "Captain America": # Usando el nombre correcto
+    if lista[0]['name'] == "Captain America": 
         return True
     return buscar_capitan(lista[1:])
 
@@ -61,7 +61,14 @@ for p in lista:
             print(p['name'])
 
 # 6
-lista.sort(key=lambda x: x['real_name'] if x.get('real_name') is not None else "")
+def obtener_nombre_real(personaje):
+    nombre = personaje.get('real_name')
+    if nombre is None:
+        return ""
+    return nombre
+
+lista.sort(key=obtener_nombre_real)
+
 print("Ordenados por nombre real")
 for p in lista:
     print(f"{p['name']} - {p['real_name']}")
@@ -90,5 +97,7 @@ for nombre in ["Electro", "Baron Zemo"]:
     for p in lista:
         if p['name'] == nombre:
             print(f"Eliminando a: {p['name']}")
+            # Aquí imprimimos toda la información del personaje antes de borrarlo
+            print(f"Información: {p}") 
             lista.remove(p)
             break
